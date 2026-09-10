@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">📚 My Notes</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#classes">Classes</a>
+      <a href="#latest">Latest Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="tag">STUDY • LEARN • GROW</p>
+        <h1>Notes made <span>simple.</span></h1>
+        <p>Class-wise, subject-wise and chapter-wise notes — all in one place.</p>
+        <a class="btn" href="#classes">Explore Notes →</a>
+      </div>
+    </section>
+
+    <section id="classes" class="section">
+      <h2>Choose Your Class</h2>
+      <div class="cards">
+        <button class="card" onclick="showClass('Class 9')">🎒<b>Class 9</b><small>Notes & study material</small></button>
+        <button class="card" onclick="showClass('Class 10')">🎓<b>Class 10</b><small>Notes & study material</small></button>
+        <button class="card" onclick="showClass('Class 11')">📘<b>Class 11</b><small>Coming soon</small></button>
+        <button class="card" onclick="showClass('Class 12')">📕<b>Class 12</b><small>Coming soon</small></button>
+      </div>
+    </section>
+
+    <section id="notes" class="section hidden">
+      <div class="section-head">
+        <div>
+          <h2 id="classTitle">Class 10 Notes</h2>
+          <p>Select a subject to see chapters.</p>
+        </div>
+        <input id="search" type="search" placeholder="Search notes..." oninput="renderNotes()">
+      </div>
+      <div id="noteList" class="note-grid"></div>
+    </section>
+
+    <section id="latest" class="section">
+      <h2>🆕 Latest Notes</h2>
+      <div class="latest">
+        <div><b>Science</b><span>Chemical Reactions and Equations</span><a href="#" onclick="demoAlert(event)">View PDF</a></div>
+        <div><b>Geography</b><span>Agriculture</span><a href="#" onclick="demoAlert(event)">View PDF</a></div>
+        <div><b>Maths</b><span>Triangles</span><a href="#" onclick="demoAlert(event)">View PDF</a></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>📞 Contact</h2>
+      <p>Notes upload karwane ya website se related help ke liye yahan apna email/social link add kar sakte ho.</p>
+      <a class="btn" href="mailto:your-email@example.com">Contact Me</a>
+    </section>
+  </main>
+
+  <footer>© 2026 My Notes • Made for students</footer>
+  <script src="script.js"></script>
+</body>
+</html>
